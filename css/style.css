@@ -7,5 +7,61 @@ html {
 }
 
 body {
-  background-color: gray;
+  background-color: #191A1B;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: bolder;
+  color: white;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-family: 'Playfair Display', serif;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+li {
+    float: right;
+    padding-left: 1rem;
+  }
+
+.hero-content {
+  padding: 2rem;
+}
+
+.hero-text {
+  padding: 10rem;
+}
+
+.container {
+  /*background-color: #191A1B;*/
+  color: : white;
+  height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+}
+
+main {
+  background-color: white;
+  background-image: url("/images/cobalt_image.png");
+  background-position: center, center;
+  background-repeat: no-repeat;
+
+  height: 50rem;
+  padding: 10rem;
+}
+
+footer {
+height: 80rem;
 }
