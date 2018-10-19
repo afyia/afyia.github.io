@@ -105,7 +105,6 @@ header ul li {
   margin-bottom: 4rem;
   padding-bottom: 2rem;
   text-align: center;
-  /*border-bottom: 2px solid #FF058A;*/
 
 }
 
@@ -116,7 +115,7 @@ header ul li {
   width: 128px;
   height: 1px;
   position: relative;
-  left: 547px;
+  left: 64.2rem;
   bottom: -1.5rem;
 }
 
@@ -376,14 +375,16 @@ footer {
   }
 
 .design-process-container h1 {
-  border-bottom: 7px solid #FFF01C;
+  border: 2px solid red;
   color: #FFFFFF;
   font-size: 6.4rem;
   font-weight: bold;
-  margin-top: 2rem;
-  text-align: center;
+  margin-left: 10rem;
+  margin-top: 5rem;
+  text-align: left;
+  padding: 2rem;
   grid-column: 2;
-
+  width: 600px;
 }
 
 .design-process-container,
@@ -433,10 +434,7 @@ footer {
 
 }
 
-.quotes   {
-  border: 2px solid red;
-  text-align: right;
-}
+
 
 .design-process-content {
   grid-column: 2;
@@ -538,14 +536,15 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 60%;
   height: 60%;
+  padding-bottom: 2rem;
 }
-
 
 /*user persona*/
 
 .persona {
+  background-color: #191A1B;
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
@@ -553,6 +552,7 @@ footer {
 }
 
 .persona h2 {
+  color: #ffffff;
   font-size: 4.1rem;
   font-weight: bold;
   line-height: 1.5;
@@ -572,9 +572,8 @@ footer {
   top: 1rem;
 }
 
-
-
 .persona  p {
+  color: #ffffff;
   font-size: 1.8rem;
   line-height: 1.5;
   padding-top: 5.3rem;
