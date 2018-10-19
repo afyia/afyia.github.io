@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  /*outline: solid 1px #dddddd;*/
 }
 
 html {
@@ -67,7 +68,7 @@ header ul li {
   margin: 48px 75%;
 }
 
-.header-container {
+#page1 .header-container {
   min-height: 95vh;
   padding-left: 10rem;
   padding-right: 10rem;
@@ -78,13 +79,18 @@ header ul li {
 
 }
 
+#page2 .header-container {
+  min-height: 95vh;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
 .header-text {
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
 
 .header-text h1 {
-  font-size: 6.1rem;
   font-family: 'Playfair Display', serif;
   font-weight: bolder;
   letter-spacing: .3rem;
@@ -92,12 +98,32 @@ header ul li {
   color: #FEFEFE;
 }
 
-.more p {
+.more {
   color: #FEFEFE;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
   text-align: center;
+  /*border-bottom: 2px solid #FF058A;*/
+
+}
+
+.more ::after {
+  display: block;
+  background-color: #FF058A;
+  content: "";
+  width: 128px;
+  height: 1px;
+  position: relative;
+  left: 547px;
+  bottom: -1.5rem;
+
+}
+
+.more a {
+  color: white;
+  text-decoration: none;
 
 }
 
@@ -114,20 +140,11 @@ main {
   margin: 0 auto 100px;
 }
 
-@media screen and (min-width: 600px) {
-  .home-project {
-    grid-template-columns: 2fr 4fr;
-    max-width: 75%;
-    grid-gap: 30px;
-  }
-}
-
 .home-project-copy {
-  /* yellow line */
-  border-top: solid 7px #FFF01C;
   margin-top: 10rem;
   margin-right: 5rem;
   padding-top: 2rem;
+
 }
 
 .home-project-copy h3 {
@@ -136,14 +153,28 @@ main {
   font-weight: 400;
   margin-bottom: 4rem;
   text-transform: uppercase;
+  position: relative;
+}
+
+.home-project-copy h3::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: -2rem;
+
 }
 
 .home-project-copy h2 {
-  font-size: 4.8rem;
-  font-weight: bolder;
+  font-weight: bold;
   margin-bottom: 4rem;
   line-height: 1.2;
+
 }
+
 
 .home-project-copy p {
   font-size: 1.8rem;
@@ -151,6 +182,23 @@ main {
   margin-bottom: 4rem;
   line-height: 1.5;
   text-align: left;
+}
+
+@media screen and (min-width: 600px) {
+  .home-project {
+    grid-template-columns: 2fr 4fr;
+    max-width: 75%;
+    grid-gap: 30px;
+
+  }
+  .home-project-copy h2 {
+    font-size: 4.8rem;
+  }
+
+  .header-text h1 {
+    font-size: 6.1rem;
+  }
+
 }
 
 .home-project-img {
@@ -229,7 +277,6 @@ footer {
 }
 
 .project-header-text h2 {
-  border-top: 7px solid #FFF01C;
   color: #FEFEFE;
   font-size: 4.8rem;
   font-family: 'Poppins', sans-serif;
@@ -240,6 +287,19 @@ footer {
   letter-spacing: .2rem;
   padding-top: 2rem;
   text-transform: uppercase;
+  position: relative;
+
+}
+
+.project-header-text h2::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 1rem;
 }
 
 .project-header-text p {
@@ -276,12 +336,22 @@ footer {
 }
 
 .overview h2 {
-  /** yellow line**/
-  border-top: 7px solid #FFF01C;
   font-size: 4.1rem;
   font-weight: bold;
   line-height: 1.5;
   padding-top: 2rem;
+  position: relative;
+}
+
+.overview h2::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 1rem;
 }
 
 .overview  p {
@@ -299,10 +369,12 @@ footer {
   font-weight: bold;
   margin-top: 2rem;
   text-align: center;
-  border: 2px solid red;
+  grid-column: 2;
+
 }
 
-.design-process-container {
+.design-process-container,
+.design-process-header {
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
@@ -311,12 +383,23 @@ footer {
 
 
 .design-process-container h2 {
-  border-top: solid 7px #FFF01C;
   font-size: 4.1rem;
   font-weight: bold;
   line-height: 1.5;
   padding-top: 2rem;
+  position: relative;
 
+}
+
+.design-process-container h2::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 1rem;
 }
 
 .design-process-container h4 {
