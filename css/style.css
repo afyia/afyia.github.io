@@ -106,6 +106,7 @@ header ul li {
   padding-bottom: 2rem;
   text-align: center;
 
+
 }
 
 .more ::after {
@@ -238,13 +239,13 @@ footer {
 .footer-links a {
   font-size: 2.6rem;
   display: inline;
-  color: white;
+  color: #FFFFFF;
   padding-left: 1.8rem;
   padding-right: 1.5rem;
 }
 
 .copyright {
-  color: white;
+  color: #FFFFFF;
   margin-top: 3rem;
   font-size: 2.6rem;
   letter-spacing: .1rem;
@@ -324,6 +325,7 @@ footer {
 /*Case Study Body*/
 
 .overview {
+  background-color: #FFFFFF;
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
@@ -487,6 +489,7 @@ footer {
 /*competitive analysis*/
 
 .comp-analysis {
+  background-color: #FFFFFF;
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
@@ -538,7 +541,10 @@ footer {
   margin-right: auto;
   width: 60%;
   height: 60%;
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+
+
 }
 
 /*user persona*/
@@ -581,27 +587,56 @@ footer {
 
 /*user stories*/
 
-.stories {
+.stories-content {
+  background-color: #FFFFFF;
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
 }
 
-.stories h2 {
-  /** yellow line**/
-  border-top: 7px solid #FFF01C;
+.stories-content h2 {
   font-size: 4.1rem;
   font-weight: bold;
   line-height: 1.5;
   padding-top: 2rem;
+  position: relative;
+  width: 60px;
 }
 
-.stories  p {
+.stories-content h2::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+
+.stories-content  p {
   font-size: 1.8rem;
   line-height: 1.5;
   padding-top: 5.3rem;
 }
+
+.stories-content {
+  grid-column: 2;
+
+}
+
+.stories-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+  width: 50%;
+  height: 50%;
+
+}
+
 
 /*user flows*/
 
@@ -613,18 +648,37 @@ footer {
 }
 
 .flows h2 {
-  /** yellow line**/
-  border-top: 7px solid #FFF01C;
   font-size: 4.1rem;
   font-weight: bold;
   line-height: 1.5;
   padding-top: 2rem;
+  position: relative;
+  width: 60px;
+}
+
+.flows h2::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 1rem;
 }
 
 .flows  p {
   font-size: 1.8rem;
   line-height: 1.5;
   padding-top: 5.3rem;
+}
+
+.user-flow-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
 }
 
 /*lo-fi wireframes*/
@@ -637,6 +691,184 @@ footer {
 }
 
 .lofi h2 {
+  font-size: 4.1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-top: 2rem;
+  position: relative;
+  width: 120px;
+
+}
+
+.lofi h2::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+
+.lofi  p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-top: 5.3rem;
+}
+
+.lofi-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+}
+
+/*hi-fi wireframes*/
+
+.hifi {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 30px;
+  padding: 5rem 10rem;
+}
+
+.hifi h2 {
+  font-size: 4.1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-top: 2rem;
+  position: relative;
+  width: 120px;
+}
+
+.hifi h2::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+
+.hifi  p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-top: 5.3rem;
+}
+
+.hifi-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+}
+
+
+/*naming*/
+
+.naming {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 30px;
+  padding: 5rem 10rem;
+}
+
+.naming h2 {
+  font-size: 4.1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.naming h2::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+
+.naming  p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-top: 5.3rem;
+}
+
+.naming-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+}
+
+
+/*logo concept*/
+
+.logo-concept {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 30px;
+  padding: 5rem 10rem;
+}
+
+.logo-concept h2 {
+  font-size: 4.1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-top: 2rem;
+  position: relative;
+  width: 60px;
+}
+
+.logo-concept h2::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+
+.logo-concept  p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-top: 5.3rem;
+}
+
+.logo-concept-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+}
+
+/*branding*/
+
+.branding {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 30px;
+  padding: 5rem 10rem;
+}
+
+.branding h2 {
   /** yellow line**/
   border-top: 7px solid #FFF01C;
   font-size: 4.1rem;
@@ -645,7 +877,159 @@ footer {
   padding-top: 2rem;
 }
 
-.lofi  p {
+.branding  p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-top: 5.3rem;
+}
+
+/*images*/
+
+.images {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 30px;
+  padding: 5rem 10rem;
+}
+
+.images h2 {
+  font-size: 4.1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-top: 2rem;
+  position: relative;
+  width: 60px;
+}
+
+.images h2::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+
+.images  p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-top: 5.3rem;
+}
+
+/*preference testing*/
+
+.testing {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 30px;
+  padding: 5rem 10rem;
+}
+
+.testing h2 {
+  font-size: 4.1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-top: 2rem;
+  position: relative;
+  width: 60px;
+}
+
+.testing h2::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+
+.testing  p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-top: 5.3rem;
+}
+
+/*final mockups*/
+
+.final-mockups {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 30px;
+  padding: 5rem 10rem;
+}
+
+.final-mockups  h2 {
+  font-size: 4.1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-top: 2rem;
+  position: relative;
+  width: 60px;
+}
+
+.final-mockups h2::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+
+.final-mockups  p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-top: 5.3rem;
+}
+
+.final-mockup-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+}
+
+/*lessons learned*/
+
+.lessons {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 30px;
+  padding: 5rem 10rem;
+}
+
+.lessons  h2 {
+  font-size: 4.1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-top: 2rem;
+  position: relative;
+
+}
+
+.lessons h2::before {
+  display: block;
+  background-color: #fff01c;
+  content: "";
+  width: 130px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+}
+
+.lessons p {
   font-size: 1.8rem;
   line-height: 1.5;
   padding-top: 5.3rem;
