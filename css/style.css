@@ -45,10 +45,34 @@ header ul li a {
   text-transform: uppercase;
 }
 
+a:link {
+    color: gray;
+}
+
+a:visited {
+  text-decoration: underline;
+ }
+
+ a:focus {
+   background: #979797;
+ }
+
+a:hover {
+  /* text-decoration: underline;  */
+  color: #FF058A;
+  cursor: pointer;
+  /* padding: 2px; */
+}
+
+a:active {
+  background: #265301;
+  color: #CDFEAA;
+}
+
 header ul li {
   display: inline;
   padding: 0 3rem 0 0;
-  font-size: 1.1rem;
+  font-size: 2rem;
   letter-spacing: .2rem;
   }
 
@@ -60,6 +84,29 @@ header ul li {
 
 .logo img{
   display: block;
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .navbar-nav {
@@ -98,6 +145,21 @@ header ul li {
     text-transform: uppercase;
 }
 
+#page3 a:hover {
+  /* text-decoration: underline;  */
+  color: #FF058A;
+  cursor: pointer;
+  /* padding: 2px; */
+}
+
+
+#page3 a:focus {
+  background: #979797;
+  }
+
+#page3 a:active {
+color: black;
+}
 
 
 .header-text {
@@ -115,6 +177,7 @@ header ul li {
 
 .more {
   color: #FEFEFE;
+  font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
   padding-bottom: 2rem;
@@ -226,14 +289,47 @@ main {
   margin-top: 2.5rem;
 }
 
-button {
+#page1 button {
   border: 2px solid #FFF01C;
   border-radius: 4px;
+  cursor: pointer;
   padding: 1rem 2.5rem;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: .1rem;
   text-transform: uppercase;
+}
+
+#page1 button:active {
+  transform: translateY(.5px);
+  filter: saturate(150%);
+}
+
+#page1 button:hover {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  /* border-color: #FF058A; */
+  background-color: #FFF01C;
+}
+
+.proto-btn {
+  border: 2px solid #FFF01C;
+  border-radius: 4px;
+  padding: 1rem 2.5rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.proto-btn button:hover {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  background-color: #FFF01C;
 }
 
 .container {
@@ -1342,7 +1438,6 @@ em {
   line-height: 2.7;
   margin: auto;
   padding-right: 2rem;
-  border: 2px solid red;
   padding-bottom: 5rem;
 
 }
