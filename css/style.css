@@ -45,6 +45,10 @@ header ul li a {
   text-transform: uppercase;
 }
 
+ul li a.pk {
+    color: #FF058A;
+}
+
 a:link {
     color: gray;
 }
@@ -143,6 +147,11 @@ header ul li {
     color: #191A1B;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+#page3 ul li a.pk {
+    color: #FF058A;
+
 }
 
 #page3 a:hover {
@@ -298,22 +307,18 @@ main {
   font-weight: 400;
   letter-spacing: .1rem;
   text-transform: uppercase;
+  transition: all 0.3s;
 }
 
-#page1 button:active {
-  transform: translateY(.5px);
-  filter: saturate(150%);
-}
 
 #page1 button:hover {
-  color: white;
-  font-size: 1.4rem;
-  font-weight: bolder;
-  /* border-color: #FF058A; */
+  color: black;
+  letter-spacing: 2px;
   background-color: #FFF01C;
 }
 
 .proto-btn {
+  background-color: transparent;
   border: 2px solid #FFF01C;
   border-radius: 4px;
   padding: 1rem 2.5rem;
@@ -323,13 +328,13 @@ main {
   font-weight: 400;
   letter-spacing: .1rem;
   text-transform: uppercase;
-  text-decoration: none;
+  transition: all 0.3s;
 }
 
+
 .proto-btn button:hover {
-  font-size: 1.4rem;
-  font-weight: bolder;
-  background-color: #FFF01C;
+  letter-spacing: 2px;
+  background-color: green;
 }
 
 .container {
@@ -393,7 +398,7 @@ footer {
   grid-template-columns: 2fr 6fr;
   max-width: 100%;
   grid-gap: 30px;
-  margin-top: 5rem;
+  margin-top: 2rem;
 
 }
 
@@ -443,8 +448,29 @@ footer {
   margin: 0 auto;
 }
 
-.project-header-text button {
+/* .project-header-text button {
   background-color: transparent;
+} */
+
+#page1 button {
+  border: 2px solid #FFF01C;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+
+#page1 button:hover {
+  color: black;
+  letter-spacing: 2px;
+  /* font-weight: bolder; */
+  /* border-color: #FF058A; */
+  background-color: #FFF01C;
 }
 
 /*Case Study Body*/
@@ -485,13 +511,21 @@ footer {
 /*design process*/
 
 .design-process {
-    /*background-color: #191A1B;*/
-    background-image: url('../images/design_process_bkgrnd.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 2000px;
-    background-size: contain;
+    background-color: #191A1B;
+    position: relative;
+    padding-bottom: 20px;
 
+  }
+
+  .design-process::after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 calc(100vw - 80px);
+    border-color: #191A1B transparent transparent transparent;
+    content:"";
+    position: absolute;
+    bottom: -100px;
   }
 
 .design-process-header h1 {
@@ -536,7 +570,7 @@ footer {
   z-index: -1;
   background: linear-gradient(#FF058A, #FFF01C);
   background-size: 400% 400%;
-  animation: gradientborders 30s ease infinite;
+  animation: gradientborders 50s ease infinite;
 
 }
 
@@ -595,6 +629,15 @@ footer {
 .design-process-content {
   grid-column: 2;
 }
+
+.design-process a {
+  color: white;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
+
 
 .key-findings {
   display: grid;
@@ -837,6 +880,14 @@ footer {
   padding-top: 5.3rem;
 }
 
+.flows a {
+  color: black;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
+
 .user-flow-img img {
   display: block;
   margin-left: auto;
@@ -893,6 +944,14 @@ footer {
   height:80%;
 }
 
+.lofi a {
+  color: black;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
+
 /*hi-fi wireframes*/
 
 .hifi {
@@ -939,6 +998,13 @@ footer {
   height:80%;
 }
 
+.hifi a {
+  color: black;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
 
 /*naming*/
 
@@ -1030,17 +1096,31 @@ footer {
   height:80%;
 }
 
+.logo-concept a {
+  color: black;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
+
 /*branding*/
 
 .branding {
-  /*background-color: #191A1B;*/
-  background-image: url('../images/brandng_bkgrnd_img.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 2000px;
-  background-size: contain;
+  background-color: #191A1B;
+  position: relative;
+  padding-bottom: 50px;
+}
 
-
+.branding::after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 60px 0 calc(100vw - 60px);
+  border-color: #191A1B transparent transparent transparent;
+  content:"";
+  position: absolute;
+  bottom: -80px;
 }
 
 .branding-process-header {
@@ -1070,6 +1150,16 @@ footer {
   grid-gap: 30px;
   padding: 5rem 10rem;
 }
+
+.branding-process-container a {
+  color: white;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
+
+
 
 .branding-process-container h4 {
   color: #FFFFFF;
@@ -1174,6 +1264,7 @@ footer {
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+
 }
 
 .fonts h2 {
@@ -1204,20 +1295,24 @@ footer {
   padding-top: 5.3rem;
 }
 
-.fonts {
-  grid-column: 2;
-
-}
-
 .font-types {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-gap: 5px; */
   padding: 5rem 10rem;
+  border: 2px solid red;
 
 }
 
 .heading p {
+  font-family: 'Libre Franklin', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+.heading2 p {
   font-family: 'Libre Franklin', sans-serif;
   color: #FFFFFF;
   text-align: center;
@@ -1326,6 +1421,14 @@ footer {
   padding-top: 5.3rem;
 }
 
+.testing a{
+    color: black;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
 .pref-test-img img {
   display: block;
   margin-left: auto;
@@ -1372,6 +1475,14 @@ footer {
   font-size: 1.8rem;
   line-height: 1.5;
   padding-top: 5.3rem;
+}
+
+.final-mockups a{
+    color: black;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+
 }
 
 .final-mockup-img img {
@@ -1452,18 +1563,49 @@ footer {
 
 }
 
+blockquote {
+  font-size: 30px;
+  font-family:'Playfair Display', serif;
+  border-left: 5px solid #FF058A;
+  margin: .5em 10px;
+  padding: 0 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 1.4;
+}
+
+blockquote:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 50px;
+  color: black;
+  font-size: 8em;
+}
+
+footer {
+  font-style: normal;
+  /* margin:0; */
+  text-align: right;
+  font-size: 1em;
+}
+
 .bio h1 {
    color: #191A1B;
-   line-height: 6rem;
+   line-height: 7.2rem;
    font-size: 4.8rem;
    font-weight: 800;
-   width: 750px
+   /* width: 300px */
+   /* margin: 0; */
 
 }
 
-.bio p {
-  margin-left: 38%;
-  padding-top: 1rem;
+.bio-content p {
+  font-size: 2rem;
+  margin-left: 36%;
 
 }
 
@@ -1474,9 +1616,8 @@ em {
 
 .bio-content {
   text-align: left;
-  width: 700px;
+  width: 80%;
   line-height: 2.7;
-  margin: auto;
   padding-right: 2rem;
   padding-bottom: 5rem;
 
@@ -1484,4 +1625,17 @@ em {
 
 .double-space {
   line-height: 2;
+}
+
+.signature {
+  padding-top: 5rem;
+  margin-left: 36%;
+
+
+}
+/* colors*/
+
+.pk {
+  color: #FF058A;
+
 }
