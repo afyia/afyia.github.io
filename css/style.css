@@ -353,6 +353,14 @@ footer {
 
 }
 
+#page3 footer{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7rem;
+  padding-top: 5rem;
+
+}
+
 .footer-links a {
   font-size: 2.6rem;
   display: inline;
@@ -581,7 +589,6 @@ footer {
   letter-spacing: .1rem;
   line-height: 1.5;
   padding-top: 5.3rem;
-  margin-left: 5rem;
 
 }
 
@@ -1201,6 +1208,39 @@ footer {
   grid-column: 2;
 
 }
+
+.font-types {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 5rem 10rem;
+
+}
+
+.heading p {
+  font-family: 'Libre Franklin', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+.ultra {
+  font-family: 'Ultra', serif;
+  color: #FFFFFF;
+  font-size: 4.2rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.sans {
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+  font-size: 4.2rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
 
 /*images*/
 
