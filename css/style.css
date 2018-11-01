@@ -635,8 +635,11 @@ footer {
   letter-spacing: .1rem;
   text-decoration: none;
   font-size: 1.5rem;
+  cursor: pointer;
 
 }
+
+
 
 
 .key-findings {
@@ -790,6 +793,18 @@ footer {
   font-size: 1.8rem;
   line-height: 1.5;
   padding-top: 5.3rem;
+}
+
+.user-persona-container {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 30px;
+  padding: 5rem 5rem;
+  border: 2px solid red;
+}
+
+.list {
+  color: white;
 }
 
 /*user stories*/
