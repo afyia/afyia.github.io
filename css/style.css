@@ -511,22 +511,24 @@ footer {
 /*design process*/
 
 .design-process {
-    background-color: #191A1B;
+    background: #191A1B;
     position: relative;
     padding-bottom: 20px;
 
   }
 
-  .design-process::after {
+  .design-process::before {
     width: 0;
     height: 0;
-    border-style: solid;
-    border-width: 100px 100px 0 calc(100vw - 80px);
-    border-color: #191A1B transparent transparent transparent;
+    border-left: 1330px solid transparent;
+    border-right: 550px solid transparent;
+    border-top: 100px solid #191A1B;
     content:"";
     position: absolute;
     bottom: -100px;
   }
+
+
 
 .design-process-header h1 {
     border-bottom: 7px solid #FFF01C;
@@ -538,6 +540,7 @@ footer {
     grid-column: 2;
     width: 50%;
   }
+
 
 .blockquote {
   position: relative;
@@ -706,7 +709,7 @@ footer {
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
-  padding: 10rem 10rem;
+  padding: 20rem 10rem;
 }
 
 .comp-analysis h2 {
@@ -728,6 +731,7 @@ footer {
   left: 0;
   top: 1rem;
 }
+
 
 .comp-analysis h1 {
   color: #191A1B;
@@ -757,9 +761,28 @@ footer {
 
 }
 
+
+.comp-analyis a {
+  color: #191A1B;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+}
+
 /*user persona*/
 
 .persona {
+  background-color: #191A1B;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 30px;
+  padding: 5rem 10rem;
+
+}
+
+.persona-container {
   background-color: #191A1B;
   display: grid;
   grid-template-columns: 2fr 4fr;
@@ -795,16 +818,145 @@ footer {
   padding-top: 5.3rem;
 }
 
-.user-persona-container {
-  display: grid;
-  grid-template-columns: 2fr 4fr;
-  grid-gap: 30px;
-  padding: 5rem 5rem;
-  border: 2px solid red;
+h1 {
+  color: #191A1B;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  padding-bottom: 1rem;
 }
 
-.list {
-  color: white;
+/* user persona 1*/
+
+.user-persona-container1 {
+  padding-top: 4rem;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  width: 740px;
+}
+
+.user-persona-container1 p {
+  color: #191A1B;
+  text-align: left;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 3rem;
+  margin-left: -1rem;
+  width: 200px;
+  line-height: 2.5rem;
+
+}
+
+.danielle{
+  grid-area: 1/1;
+  background-color: #80DAE0;
+  padding: 2rem 4rem;
+}
+
+.goals {
+  background-color: white;
+  color: #191A1B;
+  grid-area: 1/2;
+  padding: 4rem 4rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+
+}
+
+.food-blogger {
+  grid-area: 2/1;
+  background-color: #80DAE0;
+  margin-top: -3rem;
+  padding: 2rem 6rem;
+
+}
+
+.motivations{
+  grid-area: 2/2;
+  background-color: white;
+  color: #191A1B;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-top: -4rem;
+}
+
+.frustrations {
+  color: #191A1B;
+  grid-area: 3/2;
+  background-color: white;
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-top: -14rem;
+}
+
+
+/* user persona 2*/
+
+.user-persona-container2 {
+  padding-top: 4rem;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  width: 740px;
+
+}
+
+.user-persona-container2 p {
+  color: #191A1B;
+  text-align: left;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 3rem;
+  margin-left: -1rem;
+  width: 200px;
+  line-height: 2.5rem;
+}
+
+.todd {
+grid-area: 1/1;
+background-color: #F9A6A6;
+padding: 2rem 4rem;
+}
+
+.goals {
+  background-color: white;
+  color: #191A1B;
+  grid-area: 1/2;
+  padding: 4rem 4rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.videographer {
+  grid-area: 2/1;
+  background-color: #F9A6A6;
+  margin-top: -3rem;
+  padding: 1rem 6rem;
+}
+
+.motivations{
+  grid-area: 2/2;
+  background-color: white;
+  color: #191A1B;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-top: -4rem;
+}
+
+.frustrations {
+  color: #191A1B;
+  grid-area: 3/2;
+  background-color: white;
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-top: -14rem;
+
 }
 
 /*user stories*/
@@ -845,6 +997,14 @@ footer {
 
 .stories-content {
   grid-column: 2;
+
+}
+
+.stories-content a {
+  color: black;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
 
 }
 
@@ -1313,9 +1473,9 @@ footer {
 .font-types {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* grid-gap: 5px; */
+  margin-left: 28%;
   padding: 5rem 10rem;
-  border: 2px solid red;
+
 
 }
 
@@ -1540,6 +1700,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
   padding-bottom: 5rem;
+
 }
 
 .lessons h1 {
@@ -1626,6 +1787,7 @@ footer {
 
 em {
   font-style: italic;
+  font-weight: 100;
 }
 
 
