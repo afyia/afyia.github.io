@@ -85,7 +85,7 @@ header ul li {
     padding: 2.3rem 0;
   }
 
-.logo img{
+/* .logo img{
   display: block;
   -webkit-animation: rotate-center 0.6s ease-in-out both;
 	        animation: rotate-center 0.6s ease-in-out both;
@@ -110,12 +110,12 @@ header ul li {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-}
+} */
 
 .navbar-nav {
   display: flex;
   justify-content: flex-start;
-  margin: 48px 75%;
+  margin-left: 50%;
 }
 
 #page1 .header-container {
@@ -283,7 +283,7 @@ main {
 .home-project-img {
   background: rgba(197,237,255,0.3);
   display: grid;
-  width: 100%
+  width: 100%;
   margin-top: 10rem;
 }
 
@@ -339,26 +339,17 @@ main {
 
 /* footer */
 
-footer {
+/* footer {
  display: flex;
  justify-content: center;
- padding-bottom: 7rem;
-}
+ padding-bottom: 5rem;
+ border: 2 px solid green;
+} */
 
-#page2 footer{
+.footer-content {
   display: flex;
   justify-content: center;
-  padding-bottom: 7rem;
-  padding-top: 5rem;
-
-}
-
-#page3 footer{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 7rem;
-  padding-top: 5rem;
-
+  padding-bottom: 2rem;
 }
 
 .footer-links a {
@@ -373,10 +364,24 @@ footer {
   color: #FFFFFF;
   font-size: 2.6rem;
   letter-spacing: .1rem;
-  margin-top: 3rem;
-  margin-left: .1rem;
+  margin-right: -50px;
+  padding-top: 2rem;
+
 }
 
+#page2 footer{
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+
+}
+
+#page3 footer{
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+
+}
 .pink {
   color: #FF058A;
   font-style: italic;
@@ -499,6 +504,16 @@ footer {
 
 /*design process*/
 
+/* .design-process {
+  background: url('../images/blk_bkgrnd_1.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+} */
+
 .design-process {
     background: #191A1B;
     position: relative;
@@ -544,7 +559,7 @@ footer {
 .blockquote h1 {
   background-color: #191A1B;
   color: #FFFFFF;
-  font-size: 6.4rem;
+  font-size: 5.9rem;
   font-weight: bold;
   line-height: 1.3;
   padding: 20px;
@@ -742,10 +757,9 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
-  margin-top: -2rem;
+  margin-top: -10rem;
 
 }
-
 
 .comp-analyis a {
   color: #191A1B;
@@ -1318,8 +1332,6 @@ padding: 2rem 4rem;
   font-size: 1.5rem;
 
 }
-
-
 
 .branding-process-container h4 {
   color: #FFFFFF;
