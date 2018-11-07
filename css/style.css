@@ -8,8 +8,12 @@ html {
 }
 
 body {
+  /* margin: 0 auto; */
   background-color: #191A1B;
   font-family: 'Poppins', sans-serif;
+
+
+
 }
 
 /* Typography */
@@ -81,40 +85,16 @@ header ul li {
 
 .navbar {
     display: flex;
-    flex-direction column;
-    padding: 2.3rem 0;
-  }
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 
-/* .logo img{
-  display: block;
-  -webkit-animation: rotate-center 0.6s ease-in-out both;
-	        animation: rotate-center 0.6s ease-in-out both;
-}
-
-@-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
   }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-} */
 
 .navbar-nav {
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: flex-start; */
   margin-left: 50%;
 }
 
@@ -124,8 +104,8 @@ header ul li {
   background-repeat: no-repeat;
   background-size: 31.5%;
   min-height: 95vh;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 20px;
+  padding-right: 20px;
 
 }
 
@@ -166,9 +146,43 @@ header ul li {
   color: #191A1B;
 }
 
+#page4 .header-container{
+  background-color: #FEFEFE;
+  padding-left: 10rem;
+  padding-right: 10rem;
+
+}
+
+
+#page4 ul li a {
+    color: #191A1B;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#page4 ul li a.pk {
+    color: #FF058A;
+}
+
+#page4 a:hover {
+  color: #FF058A;
+  cursor: pointer;
+}
+
+
+#page4 a:focus {
+  background: #979797;
+  }
+
+#page4 a:active {
+  color: #191A1B;
+}
+
 .header-text {
   margin-top: 10rem;
   margin-bottom: 10rem;
+
 }
 
 .header-text h1 {
@@ -214,6 +228,7 @@ header ul li {
 main {
   background-color: #FEFEFE;
   min-height: 95vh;
+
 }
 
 .home-project {
@@ -345,6 +360,10 @@ main {
  padding-bottom: 5rem;
  border: 2 px solid green;
 } */
+.footer-content {
+  padding-bottom: 2rem;
+  margin-top: -4rem;
+}
 
 .footer-links {
   display: flex;
@@ -364,7 +383,7 @@ main {
   display: flex;
   justify-content: center;
   color: #FFFFFF;
-  padding-bottom: 2rem;
+  padding-bottom:
 }
 
 .copyright p {
@@ -387,6 +406,13 @@ main {
   padding-top: 5rem;
 
 }
+
+#page4 footer{
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+
+}
 .pink {
   color: #FF058A;
   font-style: italic;
@@ -403,7 +429,8 @@ main {
   grid-template-columns: 2fr 6fr;
   grid-gap: 30px;
   margin-top: 2rem;
-  max-width: 100%;
+  max-width: 80%;
+  margin: auto;
 
 }
 
@@ -480,6 +507,8 @@ main {
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 10rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .overview h2 {
@@ -524,13 +553,14 @@ main {
     position: relative;
     padding-bottom: 20px;
 
+
   }
 
   .design-process::before {
     width: 0;
     height: 0;
-    border-left: 1330px solid transparent;
-    border-right: 550px solid transparent;
+    border-left: 56vw solid transparent;
+    border-right: 34vw solid transparent;
     border-top: 100px solid #191A1B;
     content:"";
     position: absolute;
@@ -598,6 +628,8 @@ main {
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 
@@ -656,6 +688,8 @@ main {
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 2rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 
 }
 
@@ -664,6 +698,8 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   padding-bottom: 5rem;
+  max-width: 1200px;
+  margin: auto;
 
 }
 
@@ -715,6 +751,8 @@ main {
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 20rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .comp-analysis h2 {
@@ -792,6 +830,8 @@ main {
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+
+
 }
 
 .persona h2 {
@@ -971,6 +1011,9 @@ padding: 2rem 4rem;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
+
 }
 
 .stories-content h2 {
@@ -1015,7 +1058,7 @@ padding: 2rem 4rem;
 .stories-img img {
   display: block;
   margin-left: auto;
-  margin-right: 100px;
+  margin-right: 220px;
   margin-bottom: 2rem;
   margin-top: -2rem;
   width: 58%;
@@ -1031,6 +1074,8 @@ padding: 2rem 4rem;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .flows h2 {
@@ -1073,8 +1118,8 @@ padding: 2rem 4rem;
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: -2rem;
-  width: 80%;
-  height:80%;
+  width: 70%;
+  height:70%;
 }
 
 /*lo-fi wireframes*/
@@ -1084,6 +1129,8 @@ padding: 2rem 4rem;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .lofi h2 {
@@ -1119,8 +1166,8 @@ padding: 2rem 4rem;
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: -1rem;
-  width: 80%;
-  height:80%;
+  width: 70%;
+  height:70%;
 }
 
 .lofi a {
@@ -1139,6 +1186,8 @@ padding: 2rem 4rem;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .hifi h2 {
@@ -1173,8 +1222,8 @@ padding: 2rem 4rem;
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: -1rem;
-  width: 80%;
-  height:80%;
+  width: 70%;
+  height:70%;
 }
 
 .hifi a {
@@ -1193,6 +1242,8 @@ padding: 2rem 4rem;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .naming h2 {
@@ -1223,9 +1274,12 @@ padding: 2rem 4rem;
 .naming-img img {
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 300px;
   margin-bottom: 2rem;
   margin-top: -1rem;
+  width: 65%;
+  height:65%;
+
 }
 
 
@@ -1237,6 +1291,8 @@ padding: 2rem 4rem;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .logo-concept h2 {
@@ -1271,8 +1327,8 @@ padding: 2rem 4rem;
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: -1rem;
-  width: 80%;
-  height:80%;
+  width: 65%;
+  height:65%;
 }
 
 .logo-concept a {
@@ -1289,6 +1345,7 @@ padding: 2rem 4rem;
   background-color: #191A1B;
   position: relative;
   padding-bottom: 50px;
+
 }
 
 .branding::after {
@@ -1307,6 +1364,7 @@ padding: 2rem 4rem;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+
 
 }
 
@@ -1328,6 +1386,8 @@ padding: 2rem 4rem;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .branding-process-container a {
@@ -1391,6 +1451,8 @@ padding: 2rem 4rem;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .color-palette h2 {
@@ -1441,6 +1503,8 @@ padding: 2rem 4rem;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 
 }
 
@@ -1522,6 +1586,8 @@ padding: 2rem 4rem;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .images h2 {
@@ -1556,8 +1622,8 @@ padding: 2rem 4rem;
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: 1rem;
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
 
 }
 
@@ -1570,6 +1636,8 @@ padding: 2rem 4rem;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .testing h2 {
@@ -1612,8 +1680,8 @@ padding: 2rem 4rem;
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: 1rem;
-  width: 80%;
-  height: 80%;
+  width: 75%;
+  height: 75%;
 
 }
 
@@ -1626,6 +1694,8 @@ padding: 2rem 4rem;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .final-mockups  h2 {
@@ -1668,8 +1738,8 @@ padding: 2rem 4rem;
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: 1rem;
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
 }
 
 /*lessons */
@@ -1701,7 +1771,9 @@ padding: 2rem 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
-  padding-bottom: 5rem;
+  padding-bottom: 200px;
+  max-width: 1200px;
+  margin: auto;
 
 }
 
@@ -1723,11 +1795,11 @@ padding: 2rem 4rem;
 
 /* next project*/
 
-.next-project {
+/* .next-project {
   background-color: #FEFEFE;
   min-height: 50vh;
 
-}
+} */
 
 /* About Page*/
 
@@ -1817,4 +1889,44 @@ em {
 .pk {
   color: #FF058A;
 
+}
+
+/* Contact page */
+
+.contact-container {
+  padding: 5rem 10rem;
+
+}
+.form h2 {
+  font-family: Poppins;
+  font-size: 5rem;
+  line-height: 6rem;
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+  width: 80%;
+}
+
+.linebreak{
+  height: 5px;
+  background-color: #FF058A;
+  width: 80rem;
+  margin-left: .3rem;
+}
+
+.contact-container h1 {
+  font-family: Playfair Display;
+  font-size: 8rem;
+  padding-top: 5rem;
+  /* color: #FF058A; */
+}
+
+.contact-container p {
+  font-size: 2.5rem;
+  padding-top: 2rem;
+}
+
+.contact-container a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
