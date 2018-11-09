@@ -90,6 +90,7 @@ header ul li {
     padding-right: 20px;
     padding-left: 20px;
 
+
   }
 
 .navbar-nav {
@@ -106,6 +107,8 @@ header ul li {
   min-height: 95vh;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 1200px;
+  margin: auto;
 
 }
 
@@ -347,21 +350,11 @@ main {
   letter-spacing: 2px;
 }
 
-.container {
-  margin: 0 auto;
-  width: 100%;
-}
 
 /* footer */
 
-/* footer {
- display: flex;
- justify-content: center;
- padding-bottom: 5rem;
- border: 2 px solid green;
-} */
 .footer-content {
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   margin-top: -4rem;
 }
 
@@ -429,7 +422,7 @@ main {
   grid-template-columns: 2fr 6fr;
   grid-gap: 30px;
   margin-top: 2rem;
-  max-width: 80%;
+  max-width: 1200px;
   margin: auto;
 
 }
@@ -478,6 +471,7 @@ main {
 .proj-header-img img {
   width: 80%;
   margin: 0 auto;
+
 }
 
 #page1 button {
@@ -552,7 +546,6 @@ main {
     background: #191A1B;
     position: relative;
     padding-bottom: 20px;
-
 
   }
 
@@ -804,7 +797,7 @@ main {
 
 }
 
-.comp-analyis a {
+.comp-analyis-container a {
   color: #191A1B;
   letter-spacing: .1rem;
   text-decoration: none;
@@ -1118,8 +1111,8 @@ padding: 2rem 4rem;
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: -2rem;
-  width: 70%;
-  height:70%;
+  width: 65%;
+  height:65%;
 }
 
 /*lo-fi wireframes*/
@@ -1166,8 +1159,8 @@ padding: 2rem 4rem;
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: -1rem;
-  width: 70%;
-  height:70%;
+  width: 65%;
+  height:65%;
 }
 
 .lofi a {
@@ -1222,8 +1215,8 @@ padding: 2rem 4rem;
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: -1rem;
-  width: 70%;
-  height:70%;
+  width: 65%;
+  height:65%;
 }
 
 .hifi a {
@@ -1810,6 +1803,8 @@ padding: 2rem 4rem;
   max-width: 100%;
   grid-gap: 30px;
   padding-top: 10rem;
+  max-width: 1200px;
+  margin: auto;
 
 }
 
@@ -1895,15 +1890,17 @@ em {
 
 .contact-container {
   padding: 5rem 10rem;
+  max-width: 1200px;
+  margin: auto;
 
 }
 .form h2 {
   font-family: Poppins;
   font-size: 5rem;
-  line-height: 6rem;
+  line-height: rem;
   padding-top: 6rem;
   padding-bottom: 1.5rem;
-  width: 80%;
+
 }
 
 .linebreak{
