@@ -62,11 +62,19 @@ a:hover {
 }
 
 header ul li {
-  display: inline;
+  display: block;
   padding: 0 3rem 0 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: .2rem;
 }
+
+@media screen and (min-width: 600px) {
+  header ul li {
+    display: inline;
+    font-size: 2rem;
+  }
+}
+
 
 .navbar {
   display: flex;
@@ -79,6 +87,8 @@ header ul li {
 #page1 .header-container {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 30px;
+
   max-width: 1200px;
   margin: auto;
 
@@ -159,7 +169,14 @@ header ul li {
   letter-spacing: .3rem;
   line-height: 1.5;
   font-family: 'Playfair Display', serif;
+  font-size: calc(1rem + 2.5vmin);
   font-weight: bolder;
+
+}
+
+.header-text h1 span.pink {
+  font-style: italic;
+  font-weight: bold;
 }
 
 .more {
@@ -205,13 +222,13 @@ main {
 }
 
 .home-project-copy {
-  margin-top: 10rem;
-  margin-right: 5rem;
   padding-top: 2rem;
+  max-width: 80vw;
+  margin: 10rem auto 0 auto;
 
 }
 
-.home-project-copy h3 {
+.overview-copy h3 {
   font-size: 4rem;
   font-weight: 400;
   letter-spacing: .1rem;
@@ -220,7 +237,7 @@ main {
   text-transform: uppercase;
 }
 
-.home-project-copy h3::before {
+.overview h2-copy h3::before {
   background-color: #fff01c;
   content: "";
   display: block;
@@ -231,7 +248,7 @@ main {
   top: -2rem;
 }
 
-.home-project-copy h2 {
+.overview h2-copy h2 {
   font-weight: bold;
   margin-bottom: 4rem;
   line-height: 1.2;
@@ -247,18 +264,19 @@ main {
 
 /*Media queries*/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width:600px) {
   .home-project {
     grid-template-columns: 2fr 4fr;
     grid-gap: 30px;
     max-width: 85%;
 
   }
+
   .home-project-copy h2 {
     font-size: 3.8rem;
   }
 
-  .header-text h1 {
+  .header-text h1, .header-text h1 span {
     font-size: 5.1rem;
   }
 
@@ -275,26 +293,21 @@ main {
 
   }
 
-.me img {
+  .me img {
    width: 300px;
    height: 300px;
+ }
 
-}
-.bio h1 {
+
+
+
+ .bio h1 {
    line-height: 6rem;
    font-size: 4rem;
-}
-blockquote {
-  font-size: 20px;
-}
-
-.key-findings-content {
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-}
+  }
 
 
+  }
 
 
 .home-project-img {
@@ -392,9 +405,7 @@ footer {
 
 .pink {
   color: #FF058A;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 6.4rem;
+
 }
 
 /***********Case Study Page********/
@@ -495,11 +506,17 @@ footer {
 }
 
 .overview h2 {
-  font-size: 4.1rem;
+  font-size: 3.5rem;
   font-weight: bold;
   line-height: 1.5;
   padding-top: 2rem;
   position: relative;
+}
+
+@media screen and (min-width: 600px) {
+  .overview h2 {
+    font-size: 4.1rem;
+  }
 }
 
 .overview h2::before {
@@ -576,10 +593,10 @@ img.arrow {
     z-index: 1;
 }
 
-
+/*
 span {
   font-size: 10rem;
-}
+} */
 /* Blockquote main style */
 .blockquote {
   position: relative;
@@ -687,13 +704,19 @@ span {
 
 .design-process-container h2 {
   color: #FFFFFF;
-  font-size: 4.1rem;
+  font-size: 3.5rem;
   font-weight: bold;
   line-height: 1.5;
   padding-top: 2rem;
   position: relative;
   width: 60px;
 
+}
+
+@media screen and (min-width: 600px) {
+  .design-process-container h2 {
+    font-size: 4.1rem;
+  }
 }
 
 .design-process-container h2::before {
@@ -740,7 +763,7 @@ span {
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-gap: 30px;
-  padding: 2rem 10rem;
+  padding: 2rem 5rem;
   max-width: 1200px;
   margin: auto;
 
@@ -748,12 +771,17 @@ span {
 
 .key-findings-content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
   grid-gap: 20px;
-  padding-bottom: 5rem;
   max-width: 1200px;
   margin: auto;
 
+}
+
+@media screen and (min-width: 600px) {
+  .key-findings-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .key-findings-content p{
@@ -942,8 +970,7 @@ span {
   padding: 20px;
   width: 650px;
   border-radius: 10px;
-  /* grid-column: 1/span 2;
-  grid-row: 1/span 1; */
+
 
 }
 
@@ -954,9 +981,9 @@ span {
   padding: 20px;
   width: 650px;
   border-radius: 10px;
-  grid-column: 3/span 3;
-
-
+  grid-column: 2/span 2;
+  grid-row: 2;
+  z-index: 3;
 
 }
 
@@ -1802,14 +1829,18 @@ span {
 
 .bio-container {
   display: grid;
-  grid-template-columns: 6fr 4fr;
-  max-width: 100%;
   grid-gap: 30px;
-  padding-top: 10rem;
   max-width: 1200px;
   margin: auto;
-
+  padding-top: 100px;
+  padding-left: 70px;
 }
+
+@media screen and (min-width: 600px) {
+    .bio-container{
+       grid-template-columns: 1fr 1fr;
+     }
+   }
 
 blockquote {
   font-size: 30px;
@@ -1838,11 +1869,14 @@ blockquote:before {
   padding-top: 80px;
 }
 
+
+
 .bio h1 {
+   font-family: Playfair Display;
    color: #191A1B;
-   line-height: 7.2rem;
-   font-size: 4.8rem;
-   font-weight: 800;
+   line-height: 6rem;
+   font-size: 4rem;
+   font-weight: bold;
 }
 
 .bio-content p {
@@ -1858,6 +1892,7 @@ em {
   line-height: 2.7;
   max-width: 1200px;
   margin: auto;
+  padding: 5rem 10rem;
 }
 
 .double-space {
@@ -1919,11 +1954,18 @@ em {
 }
 .form h2 {
   font-family: Poppins;
-  font-size: 5rem;
-  line-height: 6.5rem;
+  font-size: 3rem;
+  line-height: 4.5rem;
   padding-top: 6rem;
   padding-bottom: 1.5rem;
 
+}
+
+@media screen and (min-width: 600px) {
+  .form h2 {
+    font-size: 5rem;
+    line-height: 6.5rem;
+  }
 }
 
 .linebreak{
@@ -1935,9 +1977,16 @@ em {
 
 .contact-container h1 {
   font-family: Playfair Display;
-  font-size: 8rem;
+  font-size: 5rem;
   padding-top: 5rem;
-  /* color: #FF058A; */
+}
+
+@media screen and (min-width: 600px) {
+  .form h2 {
+    font-size: 6rem;
+    line-height: 7.5rem;
+
+  }
 }
 
 .contact-container p {
