@@ -2324,7 +2324,7 @@ input[type=message], select {
   padding: 12px 20px;
   margin: 8px 0;
   display: block;
-  border: 1px solid #ccc;
+  border: 1px solid #ff058a;
   border-radius: 4px;
 
 }
@@ -2333,7 +2333,8 @@ input[type=submit], select {
   padding: 5px 25px;
   margin: 8px 0;
   display: block;
-  border: 1px solid #ccc;
+  border: 1px solid #ff058a;
   border-radius: 4px;
+  cursor: pointer;
 
 }
