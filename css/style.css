@@ -721,15 +721,26 @@ img.arrow {
 
 /* Blockquote header */
 .blockquote h1 {
-  position: relative;
   background-color: #191A1B;
   color: #FFFFFF;
-  font-size: 40px;
-  text-align: center;
   font-weight: normal;
-  line-height: 1;
-  margin: 0;
+  line-height: 1.2;
   padding: 20px 20px 60px 20px;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .blockquote h1 {
+    position: relative;
+    background-color: #191A1B;
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    padding: 20px 20px 60px 20px;
+  }
 }
 
 
@@ -937,7 +948,7 @@ img.arrow {
 
 .comp-analysis h1 {
   color: #191A1B;
-  font-size: 2rem;
+  font-size: 2.1rem;
   line-height: 1.3;
   margin-top: 2rem;
   text-align: left;
@@ -969,8 +980,8 @@ img.arrow {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
-  width: 75%;
-  height: 75%;
+  width: 60%;
+  height: 60%;
 
 }
 
@@ -1218,12 +1229,10 @@ img.arrow {
 .stories-img img {
   display: block;
   margin-left: auto;
-  margin-right: 150px;
+  margin-right: auto;
   margin-bottom: 2rem;
-  margin-top: -2rem;
-  width: 58%;
-  height: 58%;
-
+  width: 60%;
+  height: 60%;
 }
 
 
@@ -1287,9 +1296,9 @@ img.arrow {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
-  margin-top: -2rem;
-  width: 65%;
-  height:65%;
+  width: 60%;
+  height: 60%;
+
 }
 
 /*lo-fi wireframes*/
@@ -1343,8 +1352,8 @@ img.arrow {
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: -1rem;
-  width: 65%;
-  height:65%;
+  width: 60%;
+  height: 60%;
 }
 
 .lofi a {
@@ -1405,9 +1414,9 @@ img.arrow {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
-  margin-top: -1rem;
-  width: 65%;
-  height:65%;
+  width: 60%;
+  height: 60%;
+
 }
 
 .hifi a {
@@ -1465,11 +1474,10 @@ img.arrow {
 .naming-img img {
   display: block;
   margin-left: auto;
-  margin-right: 100px;
+  margin-right: auto;
   margin-bottom: 2rem;
-  margin-top: -1rem;
-  width: 65%;
-  height:65%;
+  width: 60%;
+  height: 60%;
 
 }
 
@@ -1529,10 +1537,10 @@ img.arrow {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2rem;
-  margin-top: -1rem;
-  width: 65%;
-  height:65%;
+  margin-bottom: 5rem;
+  width: 60%;
+  height: 60%;
+
 }
 
 .logo-concept a {
@@ -1649,19 +1657,13 @@ img.arrow {
 }
 
 .cobalt-logo-img img {
-  max-width:
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  width: 50%;
+  height: 50%;
 
-
-}
-
-@media screen and (min-width: 600px) {
-  .cobalt-logo-img img {
-    display: block;
-    margin: auto;
-    margin-bottom: 2rem;
-    max-width: 80%
-
-  }
 }
 
 
@@ -1802,13 +1804,15 @@ img.arrow {
 
 }
 
-.ultra {
-  font-family: 'Ultra', serif;
-  color: #FFFFFF;
-  font-size: 4.2rem;
-  text-align: center;
-  padding-top: 1.5rem;
+  .ultra {
+    font-family: 'Ultra', serif;
+    color: #FFFFFF;
+    font-size: 4.2rem;
+    text-align: center;
+    padding-top: 1.5rem;
+
 }
+
 
 .sans {
   font-family: 'Open Sans', sans-serif;
@@ -1868,8 +1872,8 @@ img.arrow {
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: 1rem;
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
 
 }
 
@@ -1933,8 +1937,8 @@ img.arrow {
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: 1rem;
-  width: 75%;
-  height: 75%;
+  width: 60%;
+  height: 60%;
 
 }
 
@@ -1997,8 +2001,8 @@ img.arrow {
   margin-right: auto;
   margin-bottom: 2rem;
   margin-top: 1rem;
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
 }
 
 /*lessons */
