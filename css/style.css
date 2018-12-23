@@ -996,12 +996,10 @@ img.arrow {
   text-decoration: none;
   font-size: 1.5rem;
   cursor: pointer;
-
 }
 
 
 /*user persona*/
-
 
 
 .persona {
@@ -1493,6 +1491,38 @@ img.arrow {
 
 
 .hifi a {
+  color: #191A1B;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
+
+/*Usability*/
+
+.usable {
+  background-color: #FFFFFF;
+  padding: 5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .usable  {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 30px;
+  }
+}
+
+.usable  p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding-bottom: 3rem;
+}
+
+
+.usable a {
   color: #191A1B;
   letter-spacing: .1rem;
   text-decoration: none;
