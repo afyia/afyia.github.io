@@ -2224,7 +2224,7 @@ img.arrow {
 .lessons {
   display: grid;
   grid-template-columns: 5fr;
-  padding-bottom: 300px;
+  padding-bottom: 100px;
   max-width: 1200px;
   margin: auto;
 
@@ -2356,19 +2356,41 @@ em {
   margin: auto;
 }
 
-/* .strategy, .web, .brand h2 {
-  line-height: 2;
-  font-weight: bold;
+.top-button {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 
 }
 
-.strategy, .web, .brand, li {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 2;
-  } */
+
+.top {
+    background-color: transparent;
+    border: 2px solid #FFF01C;
+    border-radius: 4px;
+    color: #FEFEFE;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    /* transition: all 0.3s; */
+    margin-bottom: 20px;
+  }
 
 
+  .top a {
+    color: #FEFEFE;
+    text-decoration: none;
+  }
+
+  .top:hover {
+    /* background-color: #FFF01C; */
+    color: #191A1B;
+    letter-spacing: 2px;
+  }
 
 /* colors*/
 
@@ -2448,7 +2470,7 @@ em {
   width: 100%;
   max-width: 400px;
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 1.8rem;
 }
 
 .contact-form input {
