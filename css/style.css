@@ -2314,11 +2314,10 @@ img.arrow {
 
 .bio-pics img{
   max-width: 100%;
-  display: block;
+  /* display: block; */
   height: auto;
   padding-bottom: 50px;
 }
-
 
 
 em {
